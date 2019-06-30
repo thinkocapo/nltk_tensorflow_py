@@ -1,23 +1,58 @@
 
+http://www.nltk.org/book/ch01.html
 
-
-1. virtualenv
-
-2. requirements/ see requirements. 
-including...
-
-#### not inside virtualenv
-sudo apt-get install python-matplotlib
+##### not inside virtualenv
 #### inside virtualenv
 ```
-#pip install python-matplotlib
+
+```
+
+## Setup
+sudo apt-get install python-matplotlib (no virtualenv)
+or
+pip install python-matplotlib (virtualenv)
 or it was:
-pip install matplotlib
+pip install matplotlib (virtualenv)
+
+
+#### tensortflow python3 env to support tensorflow:
+```
+virtualenv -p nltk_tensorflow_py_3
+pip install -r requirements.txt
+```
+which installs tensorflow, nltk, matplotlib
+
+#### Optional
+- default location for datasets is ~/nltk_data
+- sudo python -m nltk.downloader -d /usr/local/share/nltk_data all.
+- nltk.org/data.html
+- `python -m nltk.downloader all`
+
+### Run (Tests) python v2?
+```
+# tests nltk and datasets are there
+python3 app_nltk_test.py
+['The', 'Fulton', 'Coutenty', 'Grand', 'Jury', 'said', ...]
+
+# test analyzing them, opens a matplotlib for words over time in historical corpi:
+source ~/virtualenvs/nltk_python which is v2....
+python nltk.book.py
+
+```
+
+### Run -  For lots of different tests, kickstart with:
+```
+python
+>>> from nltk.book import *
+>>> from matplotlib import *
 ```
 
 
-2. download data sets by running app_downloader.py
-http://www.nltk.org/data.html
-Run the command python -m nltk.downloader all. To ensure central installation, run the command sudo python -m nltk.downloader -d /usr/local/share/nltk_data all.
+### Cool
+Note
 
-3. `python nltk.book.py`
+Important: You need to have Python's NumPy and Matplotlib packages installed in order to produce the graphical plots used in this book. Please see http://nltk.org/ for installation instructions.
+
+Note
+
+You can also plot the frequency of word usage through time using https://books.google.com/ngrams
