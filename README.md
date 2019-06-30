@@ -47,6 +47,13 @@ python
 >>> from matplotlib import *
 ```
 
+## TensorFlow
+README.TensorFlow.md
+
+## NewsApi
+export NEWS_API_KEY=<key>
+python app_newsapi.py
+
 
 ### Cool
 Note
@@ -56,3 +63,10 @@ Important: You need to have Python's NumPy and Matplotlib packages installed in 
 Note
 
 You can also plot the frequency of word usage through time using https://books.google.com/ngrams
+
+
+https://eventregistry.org/
+
+https://primer.ai/careers/
+
+https://towardsdatascience.com/natural-language-processing-event-extraction-f20d634661d3
