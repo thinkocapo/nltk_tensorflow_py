@@ -53,6 +53,9 @@ README.TensorFlow.md
 ## NewsApi
 export NEWS_API_KEY=<key>
 python app_newsapi.py
+https://newsapi.org/docs/endpoints/top-headlines
+client library newsapi-python returned empty results so use ^^
+"We crawl and index news articles from over 30,000 news sources and blogs. We also monitor the top and breaking news headlines from the following 135 of the most notable of these sources." https://newsapi.org/sources
 
 
 ### Cool
@@ -75,3 +78,7 @@ https://towardsdatascience.com/natural-language-processing-event-extraction-f20d
 
 
 newsapi is only in the python v2 `nltk_python` virtualenv
+
+
+https://realpython.com/python-requests/#the-get-request
+https://github.com/mattlisiv/newsapi-python

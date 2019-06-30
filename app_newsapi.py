@@ -26,14 +26,12 @@ country='us')
 
 
 
-# EMPTY RESULT
+# SUCCESS
 # Requests library...
 # https://newsapi.org/v2/top-headlines?country=us&apiKey=<value>
 url='https://newsapi.org/v2/top-headlines?country=us&apiKey=' + os.environ.get('NEWS_API_KEY')
-# response = requests.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=<value>')
-print(url)
 response = requests.get(url)
-print(response)
+print(response.content)
 
 
 # FAILS
