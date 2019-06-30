@@ -1,6 +1,8 @@
 import os
 from newsapi import NewsApiClient
 print(os.environ.get('API_NEWS_KEY'))
+import requests
+
 
 # Init
 newsapi = NewsApiClient(api_key=os.environ.get('API_NEWS_KEY'))
@@ -15,12 +17,23 @@ country='us')
 """
 
 
-
+# EMPTY RESULT
 # /v2/top-headlines
-top_headlines = newsapi.get_top_headlines(q='bitcoin',
-                                          sources='bbc-news,the-verge',
-                                          language='en')
-print(top_headlines)
+# top_headlines = newsapi.get_top_headlines(q='bitcoin',
+#                                           sources='bbc-news,the-verge',
+#                                           language='en')
+# print(top_headlines)
+
+
+
+# EMPTY RESULT
+# Requests library...
+# https://newsapi.org/v2/top-headlines?country=us&apiKey=<value>
+url='https://newsapi.org/v2/top-headlines?country=us&apiKey=' + os.environ.get('NEWS_API_KEY')
+# response = requests.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=<value>')
+print(url)
+response = requests.get(url)
+print(response)
 
 
 # FAILS

@@ -70,3 +70,8 @@ https://eventregistry.org/
 https://primer.ai/careers/
 
 https://towardsdatascience.com/natural-language-processing-event-extraction-f20d634661d3
+
+
+
+
+newsapi is only in the python v2 `nltk_python` virtualenv
